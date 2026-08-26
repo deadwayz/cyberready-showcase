@@ -4,7 +4,7 @@ A looping, animated preview of CyberReady Academy — Cybersecurity Awareness & 
 
 https://deadwayz.github.io/cyberready-showcase/
 
-<img width="1407" height="1072" alt="image" src="https://github.com/user-attachments/assets/00c7c48e-30eb-4e2a-a4e2-c3fbfa3fc583" />
+<img width="1584" height="1077" alt="image" src="https://github.com/user-attachments/assets/dcf42524-33bd-4122-b507-cc9cf7c86b43" />
 
 CyberReady Academy preview
 
