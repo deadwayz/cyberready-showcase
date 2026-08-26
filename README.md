@@ -1,6 +1,8 @@
 # CyberReady Academy Product Showcase
 
-A looping, animated preview of CyberReady Academy — Cybersecurity Awareness & Training Platform (https://deadwayz.github.io/cyberready-showcase/)
+A looping, animated preview of CyberReady Academy — Cybersecurity Awareness & Training Platform
+
+https://deadwayz.github.io/cyberready-showcase/
 
 ![CYBERREADY showcase preview](showcase.gif)
 
