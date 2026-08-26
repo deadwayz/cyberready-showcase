@@ -14,29 +14,29 @@ The platform turns cybersecurity awareness into a structured learning experience
 
 ## What it does
 
-Structured cybersecurity awareness training across core security topics
+* Structured cybersecurity awareness training across core security topics
 
-Interactive learning journey for guided employee training
+* Interactive learning journey for guided employee training
 
-Course, module, and lesson-based learning
+* Course, module, and lesson-based learning
 
-Employee dashboard with overall progress and recommended next lessons
+* Employee dashboard with overall progress and recommended next lessons
 
-Lesson completion and training progress tracking
+* Lesson completion and training progress tracking
 
-Quiz attempts and assessment scoring
+* Quiz attempts and assessment scoring
 
-Certificate tracking for completed training
+* Certificate tracking for completed training
 
-Instructor teaching and reflection notes
+* Instructor teaching and reflection notes
 
-Instructor-led training session management
+* Instructor-led training session management
 
-Role-based access for employees, instructors, and administrators
+* Role-based access for employees, instructors, and administrators
 
-Secure authentication and database-backed user management
+* Secure authentication and database-backed user management
 
-Responsive learning experience across desktop and mobile
+* Responsive learning experience across desktop and mobile
 
 ## Core learning areas
 
@@ -52,19 +52,19 @@ Incident Reporting
 
 ## Built with
 
-Next.js
+* Next.js
 
-React
+* React
 
-TypeScript
+* TypeScript
 
-Tailwind CSS
+* Tailwind CSS
 
-Supabase
+* Supabase
 
-Framer Motion
+* Framer Motion
 
-Lucide React
+* Lucide React
 
 ## Platform capabilities
 
