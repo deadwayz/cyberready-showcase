@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CyberReady Academy</title>
+<title>CyberReady Academy — Product Showcase</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -16,7 +16,7 @@
     --border-soft:#161E29;
     --text:#E8ECF3;
     --text-dim:#8B94A6;
-    --text-faint:#4B5566;
+    --text-faint:#8895a8;
     --brand:#3E7BFA;
     --brand-dim:#1C3766;
     --brand-glow:rgba(62,123,250,0.25);
@@ -46,9 +46,9 @@
   .hero{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;}
   .overline{
     font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.2em;
-    color:var(--brand-dim);text-transform:uppercase;display:flex;align-items:center;gap:10px;
+    color:#9fb9fc;text-transform:uppercase;display:flex;align-items:center;gap:10px;
   }
-  .overline .bar{width:22px;height:1px;background:var(--brand-dim);}
+  .overline .bar{width:22px;height:1px;background:#9fb9fc;}
   .headline{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:27px;letter-spacing:-0.01em;max-width:600px;line-height:1.25;}
   .headline b{color:var(--brand);}
   .subhead{font-size:13px;color:var(--text-dim);max-width:440px;line-height:1.5;}
@@ -298,6 +298,27 @@
     color:var(--text-dim);transition:opacity .3s ease;}
   .encourage-strip b{color:var(--brand);font-weight:600;}
 </style>
+<meta name="description" content="CyberReady Academy product showcase: guided security-awareness lessons and interactive phishing scenarios. In development.">
+<meta property="og:title" content="CyberReady Academy — Product Showcase">
+<meta property="og:description" content="CyberReady Academy product showcase: guided security-awareness lessons and interactive phishing scenarios. In development.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://deadwayz.github.io/cyberready-showcase/">
+<style>
+body{flex-direction:column;gap:22px;padding:32px 20px;height:auto;min-height:100svh;}
+#stageWrap,.frame{flex-shrink:0;}
+.portfolio-note{position:relative;z-index:5;width:100%;max-width:1000px;color:#aebaca;font:13px/1.6 system-ui,sans-serif;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+.portfolio-note p{margin:0;max-width:610px;}
+.portfolio-note strong{color:#edf2f8;font-weight:600;}
+.portfolio-actions{display:flex;gap:10px;flex-wrap:wrap;}
+.portfolio-actions a,.portfolio-actions button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 14px;color:#edf2f8;border:1px solid #526074;background:#141c29;border-radius:8px;text-decoration:none;font:inherit;cursor:pointer;}
+.portfolio-actions a:hover,.portfolio-actions button:hover{background:#223046;}
+.portfolio-actions a:focus-visible,.portfolio-actions button:focus-visible{outline:3px solid #a8c7ff;outline-offset:3px;}
+.hero-cta{text-decoration:none;cursor:pointer;}
+@media(max-width:600px){body{padding:24px 12px;}.portfolio-note{font-size:13px;gap:14px;}.portfolio-actions{width:100%;}.portfolio-actions a,.portfolio-actions button{flex:1;}.hero{padding:0 10px;}.headline{font-size:23px;}}
+.still-mode *, .still-mode *::before, .still-mode *::after {animation:none!important;transition:none!important;}
+.still-mode .screen.active .obj-item,.still-mode .screen.active .mission-card {opacity:1;transform:none;}
+@media(max-width:720px){.sidebar{display:none;}.frame{height:650px;max-height:none;max-width:100%;}.topbar{padding:12px 8px;justify-content:center;}.tb-title{display:none;}.tab-btn{min-height:44px;padding:6px 9px;}.screen{padding:18px 14px;overflow:auto;}.dash-grid{flex-direction:column;gap:18px;}.hero{width:100%;}.overline{font-size:9px;letter-spacing:.1em;}.stats-row{flex-wrap:wrap;}.stat-card{min-width:95px;}.mission-card{position:static;width:100%;margin-top:24px;}.journey-map{height:auto;min-height:100%;}.path-row{align-items:flex-start;gap:6px;}.path-line,.path-line-fill{top:7px;}.lens-row{flex-direction:column;}.tab-btn{color:#b8c5d8;}.case-top,.case-vendor{flex-wrap:wrap;gap:8px;}.viewport{min-height:0;}}
+</style>
 </head>
 <body>
 <div class="bg-glow"></div>
@@ -305,8 +326,8 @@
 <div class="hero">
   <div class="overline"><span class="bar"></span>MISSION-BASED SECURITY TRAINING<span class="bar"></span></div>
   <div class="headline">You don't need to be a security expert — you just need to <b>notice</b>.</div>
-  <div class="subhead">CyberReady turns awareness into a habit you actually keep, one short mission at a time.</div>
-  <div class="hero-cta">Start Your First Mission →</div>
+  <div class="subhead">Guided lessons and practical security scenarios, one short mission at a time.</div>
+  <a class="hero-cta" href="https://github.com/deadwayz/cyberready-showcase#current-scope">Read the project case study →</a>
 </div>
 
 <div class="frame">
@@ -585,12 +606,14 @@ function runAnimations(name){
 }
 
 function advance(){
+  if(document.body.classList.contains("still-mode")) return;
   idx = (idx+1) % order.length;
   showScreen(order[idx]);
 }
 
 function resetTimer(){
   if(timer) clearInterval(timer);
+  if(document.body.classList.contains("still-mode")) return;
   timer = setInterval(advance, SCREEN_MS);
 }
 
@@ -604,6 +627,23 @@ tabBtns.forEach(btn=>{
 
 showScreen('dashboard');
 resetTimer();
+</script>
+<footer class="portfolio-note" aria-label="About this showcase">
+<p><strong>Learning prototype · CyberReady Academy</strong><br>Illustrative presentation. Application source remains private. Progress and assessment screens use sample data.</p>
+<div class="portfolio-actions"><a href="https://github.com/deadwayz/cyberready-showcase">Read the case study</a><button type="button" id="motionToggle" aria-pressed="false">Use still view</button></div>
+</footer>
+<script>
+(function(){
+  var button=document.getElementById('motionToggle');
+  function setStill(still){
+    document.body.classList.toggle('still-mode',still);
+    button.setAttribute('aria-pressed',String(still));
+    button.textContent=still?'Play tour':'Use still view';
+    if(still){if(timer) clearInterval(timer);}else{resetTimer();}
+  }
+  setStill(window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  button.addEventListener('click',function(){setStill(!document.body.classList.contains('still-mode'));});
+})();
 </script>
 </body>
 </html>
